@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Iron_Admin"/>
+        <Description value="This is a mod that adds an Admin only armor set."/>
+        <Author value="Hexlith"/>
+        <Version value="0.01"/>
+    </ModInfo>
+</xml>

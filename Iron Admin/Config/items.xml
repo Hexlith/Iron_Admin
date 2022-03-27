@@ -1,0 +1,388 @@
+
+<Iron_Admin>
+	<append xpath="/items">
+			<item name="armorAdminMaster">
+    <property name="CustomIcon" value="armorSteelHelmet"/>
+    <property name="CustomIconTint" value="FD0202"/>
+    <effect_group name="Base Effects">
+        <passive_effect name="ModSlots" operation="base_set" value="6"/>
+        <passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+        <passive_effect name="DegradationMax" operation="base_set" value="350000"/>
+    </effect_group>
+    <property name="CreativeMode" value="Player"/>
+    <property name="CustomIcon" value="armorSteelHelmet"/>
+    <property name="DisplayType" value="armorHeavy"/>
+    <property name="Material" value="Mmetal"/> <property name="Weight" value="4"/>
+    <property name="RepairTools" value="resourceRepairKit"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="HoldType" value="45"/>
+    <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+    <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    <property name="DescriptionKey" value="armorSteelGroupDesc"/>
+    <property name="Group" value="Armor,TCArmor"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="UnlockedBy" value=""/>
+    <property name="ShowQuality" value="false"/>
+		</item>
+
+
+<item name="armorAdminHelmet">
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="head,armor,armorHead,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelHelmet"/>
+    <property name="CustomIconTint" value="FD0202"/>
+	<property name="EquipSlot" value="Head"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,350000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="0.1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_helmet"/>
+		<property name="Overlay0" value="armor_iron_helmet"/>
+		<property name="Overlay0Tint" value="FD0202"/>
+		<property name="Layer" value="middle"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="Mask1" value="Head" param1="inner"/>
+		<property name="Mask3" value="Face" param1="inner"/>
+		<property name="Mask4" value="Face" param1="middle"/>
+		<property name="Mask5" value="Face" param1="outer"/>
+		<property name="Mask7" value="Eyes" param1="inner"/>
+		<property name="Mask8" value="Eyes" param1="middle"/>
+		<property name="Mask9" value="Eyes" param1="outer"/>
+	</property>
+</item>
+
+<item name="armorAdminChest"> 
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelChest"/>
+    <property name="CustomIconTint" value="FD0202"/>
+	<property name="EquipSlot" value="Chest"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,350000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_chest"/>
+		<property name="Overlay0" value="armor_iron_chest"/>
+		<property name="Overlay0Tint" value="FD0202"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="ChestArmor"/>
+	</property>
+</item>
+
+<item name="armorAdminGloves">
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelGloves"/>
+    <property name="CustomIconTint" value="FD0202"/>
+	<property name="EquipSlot" value="Hands"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,350000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_gloves"/>
+		<property name="Overlay0" value="armor_iron_gloves"/>
+		<property name="Overlay0Tint" value="FD0202"/>
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Gloves"/>
+	</property>
+</item>
+
+<item name="armorAdminLegs"> 
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelLegs"/>
+    <property name="CustomIconTint" value="FD0202"/>
+	<property name="EquipSlot" value="Legs"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,350000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_pants"/>
+		<property name="Overlay0" value="armor_iron_pants"/>
+		<property name="Overlay0Tint" value="FD0202"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="LegArmor"/>
+	</property>
+</item>
+
+<item name="armorAdminBoots">
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelBoots"/>
+    <property name="CustomIconTint" value="FD0202"/>
+	<property name="EquipSlot" value="Feet"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,350000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_boots"/>
+		<property name="Overlay0" value="armor_iron_boots"/>
+		<property name="Overlay0Tint" value="FD0202"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="Footwear"/>
+	</property>
+</item>
+
+			<item name="armorTGAMaster">
+			<property name="CustomIcon" value="armorSteelHelmet"/>
+			<property name="CustomIconTint" value="DA9100"/>
+						<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
+						</effect_group>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="armorSteelHelmet"/>
+	<property name="DisplayType" value="armorHeavy"/>
+	<property name="Material" value="Mmetal"/> <property name="Weight" value="4"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="DescriptionKey" value="armorSteelGroupDesc"/>
+	<property name="Group" value="Armor,TCArmor"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="UnlockedBy" value=""/>
+	<property name="ShowQuality" value="false"/>
+</item>
+
+<item name="armorTGAHelmet">
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="head,armor,armorHead,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelHelmet"/>
+    <property name="CustomIconTint" value="DBE2E9"/>
+	<property name="EquipSlot" value="Head"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,15000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_helmet"/>
+		<property name="Overlay0" value="armor_iron_helmet"/>
+		<property name="Overlay0Tint" value="DBE2E9"/>
+		<property name="Layer" value="middle"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="Mask1" value="Head" param1="inner"/>
+		<property name="Mask3" value="Face" param1="inner"/>
+		<property name="Mask4" value="Face" param1="middle"/>
+		<property name="Mask5" value="Face" param1="outer"/>
+		<property name="Mask7" value="Eyes" param1="inner"/>
+		<property name="Mask8" value="Eyes" param1="middle"/>
+		<property name="Mask9" value="Eyes" param1="outer"/>
+	</property>
+</item>
+
+<item name="armorTGAChest"> 
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelChest"/>
+    <property name="CustomIconTint" value="DBE2E9"/>
+	<property name="EquipSlot" value="Chest"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,15000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_chest"/>
+		<property name="Overlay0" value="armor_iron_chest"/>
+		<property name="Overlay0Tint" value="DBE2E9"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="ChestArmor"/>
+	</property>
+</item>
+
+<item name="armorTGAGloves">
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelGloves"/>
+    <property name="CustomIconTint" value="DBE2E9"/>
+	<property name="EquipSlot" value="Hands"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,15000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_gloves"/>
+		<property name="Overlay0" value="armor_iron_gloves"/>
+		<property name="Overlay0Tint" value="DBE2E9"/>
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Gloves"/>
+	</property>
+</item>
+
+<item name="armorTGALegs"> 
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelLegs"/>
+    <property name="CustomIconTint" value="DBE2E9"/>
+	<property name="EquipSlot" value="Legs"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,15000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_pants"/>
+		<property name="Overlay0" value="armor_iron_pants"/>
+		<property name="Overlay0Tint" value="DBE2E9"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="LegArmor"/>
+	</property>
+</item>
+
+<item name="armorTGABoots">
+	<property name="Extends" value="armorSteelMaster" param1="CustomIcon"/>
+	<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,heavyArmorPenalty,canHaveCosmetic,heavyArmorDeg"/>
+	<property name="CustomIcon" value="armorSteelBoots"/>
+    <property name="CustomIconTint" value="DBE2E9"/>
+	<property name="EquipSlot" value="Feet"/>
+	<effect_group name="steel armor">
+		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.061,0.076" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="250,15000" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+	</effect_group>
+
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_boots"/>
+		<property name="Overlay0" value="armor_iron_boots"/>
+		<property name="Overlay0Tint" value="DBE2E9"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="Footwear"/>
+	</property>
+</item>
+		
+	</append>
+</Iron_Admin>

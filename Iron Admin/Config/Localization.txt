@@ -1,0 +1,6 @@
+Key,File,Type,english
+armorAdminHelmet,armor,item,Admin Helmet
+armorAdminChest,armor,item,Admin Chestplate
+armorAdminLegs,armor,item,Admin Legs
+armorAdminBoots,armor,item,Admin Boots
+armorAdminGloves,armor,item,Admin Gloves
